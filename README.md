@@ -97,7 +97,7 @@ Be mindful of industry risks and stay adaptable to changing trends for long-term
 ├── zippedData
 ├── .gitignore
 ├── Microsoft-Movie-Analysis-Presentation.pdf
-├── student.ipynb
-└── README.md
+├── README.md
+└── student.ipynb
 ```
 	
