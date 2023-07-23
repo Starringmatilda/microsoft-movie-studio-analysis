@@ -26,22 +26,22 @@ The questions to be answered by this analysis include:
 
 ### Data 
 ***
-The zippedData Folder contains the data sets used in analysis from:
+The `zippedData` Folder contains the data sets used in analysis from:
 - [Box Office Mojo](https://www.boxofficemojo.com/)
 - [IMDB](https://www.imdb.com/)
 - [Rotten Tomatoes](https://www.rottentomatoes.com/)
 - [TheMovieDB](https://www.themoviedb.org/)
 - [The Numbers](https://www.the-numbers.com/)  
 
-The 'index.ipynb' file is the notebook that contains EDA conducted on the datasets.
+The `student.ipynb` file is the notebook that contains EDA conducted on the datasets.
 The datasets used explicitly in the data analysis are:
 - title_ratings.csv
 - tn.movie_budgets.csv
 - bom.movie_gross.csv
 - title.basics.csv
  
-The 'images' folder contains the images used in the presentation and notebook.
-'presentation.pdf' is a non-technical presentation of the analysis
+The `images` folder contains the images used in the presentation and notebook.
+`presentation.pdf` is a non-technical presentation of the analysis
 
 ### Methods
 ***
@@ -96,8 +96,8 @@ Be mindful of industry risks and stay adaptable to changing trends for long-term
 ├── images
 ├── zippedData
 ├── .gitignore
-├── student.ipynb
 ├── Microsoft-Movie-Analysis-Presentation.pdf
+├── student.ipynb
 └── README.md
 ```
 	
