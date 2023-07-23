@@ -49,35 +49,35 @@ Exploratory Data Analysis(EDA) includes data cleaning, merging, and visualizatio
 The used data sets were loaded into the 'notebook' cleaned, merged and irrelevant columns dropped. Visualizations were made to fit the questions as stated above and give recommendations.
 In depth, data cleaning includes dealing with missing values and extraneous data, identifying duplicates, converting the values into the correct data types, dropping unnecessary columns, and merging data sets.
 ### Results
-![moviecountpergenre]
+#### Moviecount per Genre
 <img src= "images/moviecountpergenre.png">
 
-![averageratingvsgenre]
+#### Average rating vs Genre
 <img src= "images/averageratingvsgenre.png">
 
-![averageROIvsgenre]
+#### Genres with the highest ROI
 <img src= "images/averageROIvsgenre.png">
 
-![netprofit vs genre]
+### Genres that generated the highest Net Profit
 <img src= "images/netprofitvsgenre.png">
 
-![genre_distribution]
+#### Genre distribution
 <img src= "images/genre_distribution.png">
 
-![netprofitvsbudget]
+#### Correlation of Production Budget with Net Profit
 <img src= "images/netprofitvsbudget.png">
 
-![budget_and_profit]
+#### 3 Categories of Production Budget and the Net profit generated
 <img src= "images/budgetandprofit.png">
 
 ### Recommendations
 ***
 From the results of my analysis, the following recommendations were derived:
 - Prioritize making movies in the Adventure, Action, Comedy, and Drama genres, as they have demonstrated higher net profit potential.
--Microsoft should focus on producing movies in the Drama, Comedy, Adventure, and Action genres as they hold greater audience appeal.
--Boosted Budgets, Bigger Returns: Higher film budgets enable improved production values.
--Strategic Partnerships: seeking collaborations with movie studios like Universal, Buena Vista, and Warner Bros to boost market reach and profitability.
--Exploring untapped genres: taking a risk and venturing into movie genres with fewer productions.
+- Microsoft should focus on producing movies in the Drama, Comedy, Adventure, and Action genres as they hold greater audience appeal.
+- Boosted Budgets, Bigger Returns: Higher film budgets enable improved production values.
+- Strategic Partnerships: seeking collaborations with movie studios like Universal, Buena Vista, and Warner Bros to boost market reach and profitability.
+- Exploring untapped genres: taking a risk and venturing into movie genres with fewer productions.
 
 
 ### Conclusion
