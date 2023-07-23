@@ -1,72 +1,103 @@
-# Phase 1 Project Template - Minimum Viable Product (MVP)
+# Microsoft Movie Studio Analysis - Dsc Phase 1 Project
 
-![blueprint](images/blueprint.png)
+<img src="images/download.jpeg" width="400" height="250">
 
-This repository is like a blueprint, providing structure for your first End of Phase Project. We suggest you base your Phase 1 project off of this repository so you can focus less on formatting and organization, and more on the _analysis and communication skills_ that will support your progress through the course. This template is designed to make your project portfolio-ready in order to impress the future employers who will review it. 
+##### Author: Matilda Odalo
 
-## Repository Contents
-
-Below is a list of the contents of this repository - instructions for using them are in the next section.
-
-- `README.md`: The README for this repo branch explaining it's contents - you're reading it now
-- `TEMPLATE_README.md`: An example of a project README that provides a brief overview of your whole project
-- `dsc-phase1-project-template.ipynb`: A starter Jupyter Notebook with headings, code examples and guiding questions
-- `DS_Project_Presentation_Template.pdf`: A starter slide deck presenting your project - here is an [editable version](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy)
-- `zippedData` folder: A folder for the data you reference with your code
-- `images` folder: A folder for the images you reference in your files 
-- `.gitignore`: A hidden file that tells git to not track certain files and folders
-
-## Instructions For Using This Repository
-
-### Fork This Repository
-
-**For a group project**, have only one team member do these steps:
-
-1. Fork this repository to your personal account
-   - In GitHub, go to this repository and click the "Fork" button in the upper right
-   
-2. Change the name of your fork of this repo to a _descriptive_ name of your choosing
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Options" -> "Repository Name" -> "Rename"
-   - Make the name descriptive, since potential employers will read it. Ex: "Microsoft-Movie-Analysis" is better than "Project-1"
-
-3. Use `git clone` to clone your fork of this repo to your local computer
-
-4. **For a group project**, add team members as collaborators to your fork of this repo
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Manage Access" -> "Invite Teams or People"
-   - Add your project team members as collaborators & send them the repo GitHub URL
-
-### Work In Your Fork Of This Repository
-
-- Work in the repo clone that you created on your local machine
-- Start writing and coding in the Jupyter Notebook `dsc-phase1-project-template.ipynb`
-- Fill in the README template in `TEMPLATE_README.md`
-- Use `git add`, `git commit`, and `git push` often to update your repo in GitHub
-   - For a refresher on how to do this and why it's important, review Topic 2: Bash and Git
-
-### Use The Slide Template
-
-1. Go to [this link](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy) to make an editable copy of the slide deck in your own Google Drive account
-2. Go to "Slide," select "Change Theme," and pick a theme you like so your presentation doesn't look like everyone else's
-3. **For a group project**, click the "Share" button and add your teammates as editors
-
-### Tidy Up Your Project
-
-- Change the file name of the Jupyter Notebook (`dsc-phase1-project-template.ipynb`) to something more descriptive
-- Save an appropriately-named PDF version of your slide deck to the repository
-- Rename the template readme you've been working in by running `git mv TEMPLATE_README.md README.md`
-- Delete unnecessary files from the repo using `git rm`
-   - The presentation PDF: `DS_Project_Presentation_Template.pdf`
-   - Any unused data files in the `zippedData` folder
-   - Any unused images in the `images` folder
-- Utilize the .gitignore file to ignore large unzipped data files in the `zippedData` folder
-   - Add `*.csv`,`*.tsv`, and `*.db` to the .gitignore file
-
-### Submit Your Project
-
-To submit your project, please follow the instructions in the "Project Submission & Review" page in the Milestones course.
-
+## Overview
 ***
-### Notes
+The Microsoft project aims to evaluate the practicability of establishing a movie studio by analyzing data on movie ratings, movie titles, budgets, genres, gross revenues and various movie studios. This analysis allows for a deeper understanding of the types of movies that have the highest potential for generating substantial gross revenues and a high return on investment(ROI).
 
-- The visualizations in the notebook use best practices for visualization that you should try to emulate. For example, they have clear axes, descriptive titles, and appropriate number formatting
-- The `dsc-phase1-project-template.ipynb` is intended to be the _final version_ of your project. The first notebook you create will not look like this. You are encouraged to start with a very disorderly notebook and clean it as you go
+In this document, we will identify the significant opportunities that lie ahead the film market. By examining the trends, patterns, and success factors within the industry, we will provide actionable recommendations on how Microsoft can effectively penetrate the film market and position itself for success. The insights and strategic guidance will enable Microsoft to make informed decisions regarding movie production, resource allocation, and potential partnerships, ensuring a strong foothold in the dynamic and rewarding film industry.
+
+### Business Problem
+***
+The problem at hand is to determine the viability of Microsoft establishing a movie studio. The objective is to analyze various data points such as movie ratings, budgets, genres, and gross revenues to gain insights into the factors that contribute to the success and profitability of movies and movie studios. By understanding the types of movies that have the potential to generate substantial gross revenues and a high return on investment (ROI), Microsoft can make informed decisions about entering the competitive film market. The goal is to provide actionable recommendations on how Microsoft can effectively penetrate the film market, allocate resources wisely, and potentially form strategic partnerships. Ultimately, the aim is to position Microsoft for success in the dynamic and rewarding film industry.
+
+The questions to be answered by this analysis include:
+
+- What are the most prevalent movie genres?
+-  What are the top 5 highest rated movie genres?
+- Which genres tend to have the highest Return on Investment (ROI), and which genres tend to have the lowest Return on Investment (ROI)?
+- What is the distribution of net profit across different movie genres, and are there any genres that consistently tend to generate higher net profits than others?
+-  Is there a correlation between the production budget and the net profit?
+- Which movie studios have generated the highest net profit?
+- Which genres are most frequently produced by the top 4 movie studios with the highest net profit?
+
+### Data 
+***
+The zippedData Folder contains the data sets used in analyis from:
+- [Box Office Mojo](https://www.boxofficemojo.com/)
+- [IMDB](https://www.imdb.com/)
+- [Rotten Tomatoes](https://www.rottentomatoes.com/)
+- [TheMovieDB](https://www.themoviedb.org/)
+- [The Numbers](https://www.the-numbers.com/)  
+
+The 'index.ipynb' file is the notebook that contains EDA conducted on the datasets.
+The datasets specifically used in the data analyis are:
+- title_ratings.csv
+- tn.movie_budgets.csv
+- bom.movie_gross.csv
+- title.basics.csv
+ 
+The 'images' folder contains the images used in the presentation and notebook.
+'presentation.pdf' is a non-technical presentation of the analysis
+
+### Methods
+***
+Exploratory Data Analysis(EDA) which includes data cleaning, merging and visualization.
+The used data sets were loaded into the 'notebook' cleaned, merged and irrelevant columns dropped. Visualization were made to fit the questions as stated above and give recommendations.
+In depth, data cleaning includes dealing with missing values, extraneous data, identifying duplicates, converting the values into the correct data types, dropping unecessary columns and merging data sets.
+### Results
+![moviecountpergenre]
+<img src= "imagesmoviecountpergenre.png">
+
+![averageratingvsgenre]
+<img src= "averatingvsgenre.png">
+
+![averageROIvsgenre]
+<img src= "averageROIvsgenre.png">
+
+![netprofit vs genre]
+<img src= "netprofitvsgenre.png">
+
+![genre_distribution]
+<img src= "genre_distribution.png">
+
+![netprofitvsbudget]
+<img src= "netprofitvsbudget.png">
+
+![budget_and_profit]
+<img src= "budgetandprofit.png">
+
+### Recommendations
+***
+From the results in my analysis, the following recommendations were derived:
+- Prioritize making movies in the Adventure, Action, Comedy, and Drama genres, as they have demonstrated higher net profit potential.
+-Microsoft should focus on producing movies in the Drama, Comedy, Adventure and Action genres as they hold greater audience appeal.
+-Boosted Budgets, Bigger Returns: Higher film budgets enable improved production values.
+-Strategic Partnerships: seeking collaborations with movie studios like Universal, Buena Vista and Warner Bros to boost market reach and profitability.
+-Exploring untapped genres: taking a risk and venturing into movie genres with fewer productions.
+
+
+### Conclusion
+***
+Microsoft should prioritize genres like Drama, Comedy, Adventure, and Action for higher profits.
+
+
+Investing in higher-budget productions and effective marketing strategies will attract a larger audience. 
+
+
+Be mindful of industry risks and stay adaptable to changing trends for long-term profitability. Leverage brand strength and partnerships for success.
+
+## Repository Structure
+
+```
+├── images
+├── zippedData
+├── .gitignore
+├── index.ipynb
+├── Microsoft-Movie-Analysis-Presentation.pdf
+└── README.md
+```
+	
