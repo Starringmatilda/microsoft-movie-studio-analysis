@@ -49,6 +49,10 @@ Exploratory Data Analysis(EDA) includes data cleaning, merging, and visualizatio
 The used data sets were loaded into the 'notebook' cleaned, merged and irrelevant columns dropped. Visualizations were made to fit the questions as stated above and give recommendations.
 In depth, data cleaning includes dealing with missing values and extraneous data, identifying duplicates, converting the values into the correct data types, dropping unnecessary columns, and merging data sets.
 ### Results
+
+#### Movie Studios with the Highest Net Profit
+<img src= "images/netprofitvs_studios.png"> 
+
 #### Moviecount per Genre
 <img src= "images/moviecountpergenre.png">
 
