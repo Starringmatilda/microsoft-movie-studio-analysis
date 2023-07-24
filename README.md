@@ -6,9 +6,9 @@
 
 ## Overview
 ***
-The Microsoft project aims to evaluate the practicability of establishing a movie studio by analyzing data on movie ratings, movie titles, budgets, genres, gross revenues and various movie studios. This analysis allows for a deeper understanding of the types of movies that have the highest potential for generating substantial gross revenues and a high return on investment(ROI).
+The Microsoft project aims to evaluate the practicability of establishing a movie studio by analyzing data on movie ratings, movie titles, budgets, genres, gross revenues, and various movie studios. This analysis allows for a deeper understanding of the types of movies that have the highest potential for generating substantial gross revenues and a high return on investment(ROI).
 
-In this document, we will identify the significant opportunities that lie ahead the film market. By examining the trends, patterns, and success factors within the industry, we will provide actionable recommendations on how Microsoft can effectively penetrate the film market and position itself for success. The insights and strategic guidance will enable Microsoft to make informed decisions regarding movie production, resource allocation, and potential partnerships, ensuring a strong foothold in the dynamic and rewarding film industry.
+In this document, we will identify the significant opportunities that lie ahead in the film market. By examining the trends, patterns, and success factors within the industry, we will provide actionable recommendations on how Microsoft can effectively penetrate the film market and position itself for success. The insights and strategic guidance will enable Microsoft to make informed decisions regarding movie production, resource allocation, and potential partnerships, ensuring a strong foothold in the dynamic and rewarding film industry.
 
 ### Business Problem
 ***
@@ -17,7 +17,7 @@ The problem at hand is to determine the viability of Microsoft establishing a mo
 The questions to be answered by this analysis include:
 
 - What are the most prevalent movie genres?
--  What are the top 5 highest rated movie genres?
+-  What are the top 5 highest-rated movie genres?
 - Which genres tend to have the highest Return on Investment (ROI), and which genres tend to have the lowest Return on Investment (ROI)?
 - What is the distribution of net profit across different movie genres, and are there any genres that consistently tend to generate higher net profits than others?
 -  Is there a correlation between the production budget and the net profit?
@@ -26,58 +26,62 @@ The questions to be answered by this analysis include:
 
 ### Data 
 ***
-The zippedData Folder contains the data sets used in analyis from:
+The `zippedData` Folder contains the data sets used in analysis from:
 - [Box Office Mojo](https://www.boxofficemojo.com/)
 - [IMDB](https://www.imdb.com/)
 - [Rotten Tomatoes](https://www.rottentomatoes.com/)
 - [TheMovieDB](https://www.themoviedb.org/)
 - [The Numbers](https://www.the-numbers.com/)  
 
-The 'index.ipynb' file is the notebook that contains EDA conducted on the datasets.
-The datasets specifically used in the data analyis are:
+The `student.ipynb` file is the notebook that contains EDA conducted on the datasets.
+The datasets used explicitly in the data analysis are:
 - title_ratings.csv
 - tn.movie_budgets.csv
 - bom.movie_gross.csv
 - title.basics.csv
  
-The 'images' folder contains the images used in the presentation and notebook.
-'presentation.pdf' is a non-technical presentation of the analysis
+The `images` folder contains the images used in the presentation and notebook.
+`presentation.pdf` is a non-technical presentation of the analysis
 
 ### Methods
 ***
-Exploratory Data Analysis(EDA) which includes data cleaning, merging and visualization.
-The used data sets were loaded into the 'notebook' cleaned, merged and irrelevant columns dropped. Visualization were made to fit the questions as stated above and give recommendations.
-In depth, data cleaning includes dealing with missing values, extraneous data, identifying duplicates, converting the values into the correct data types, dropping unecessary columns and merging data sets.
+Exploratory Data Analysis(EDA) includes data cleaning, merging, and visualization.
+The used data sets were loaded into the 'notebook' cleaned, merged and irrelevant columns dropped. Visualizations were made to fit the questions as stated above and give recommendations.
+In depth, data cleaning includes dealing with missing values and extraneous data, identifying duplicates, converting the values into the correct data types, dropping unnecessary columns, and merging data sets.
 ### Results
-![moviecountpergenre]
-<img src= "imagesmoviecountpergenre.png">
 
-![averageratingvsgenre]
-<img src= "averatingvsgenre.png">
+#### Movie Studios with the Highest Net Profit
+<img src= "images/netprofitvs_studios.png"> 
 
-![averageROIvsgenre]
-<img src= "averageROIvsgenre.png">
+#### Moviecount per Genre
+<img src= "images/moviecountpergenre.png">
 
-![netprofit vs genre]
-<img src= "netprofitvsgenre.png">
+#### Average rating vs Genre
+<img src= "images/averageratingvsgenre.png">
 
-![genre_distribution]
-<img src= "genre_distribution.png">
+#### Genres with the highest ROI
+<img src= "images/averageROIvsgenre.png">
 
-![netprofitvsbudget]
-<img src= "netprofitvsbudget.png">
+### Genres that generated the highest Net Profit
+<img src= "images/netprofitvsgenre.png">
 
-![budget_and_profit]
-<img src= "budgetandprofit.png">
+#### Genre distribution
+<img src= "images/genre_distribution.png">
+
+#### Correlation of Production Budget with Net Profit
+<img src= "images/netprofitvsbudget.png">
+
+#### 3 Categories of Production Budget and the Net profit generated
+<img src= "images/budgetandprofit.png">
 
 ### Recommendations
 ***
-From the results in my analysis, the following recommendations were derived:
+From the results of my analysis, the following recommendations were derived:
 - Prioritize making movies in the Adventure, Action, Comedy, and Drama genres, as they have demonstrated higher net profit potential.
--Microsoft should focus on producing movies in the Drama, Comedy, Adventure and Action genres as they hold greater audience appeal.
--Boosted Budgets, Bigger Returns: Higher film budgets enable improved production values.
--Strategic Partnerships: seeking collaborations with movie studios like Universal, Buena Vista and Warner Bros to boost market reach and profitability.
--Exploring untapped genres: taking a risk and venturing into movie genres with fewer productions.
+- Microsoft should focus on producing movies in the Drama, Comedy, Adventure, and Action genres as they hold greater audience appeal.
+- Boosted Budgets, Bigger Returns: Higher film budgets enable improved production values.
+- Strategic Partnerships: seeking collaborations with movie studios like Universal, Buena Vista, and Warner Bros to boost market reach and profitability.
+- Exploring untapped genres: taking a risk and venturing into movie genres with fewer productions.
 
 
 ### Conclusion
@@ -96,8 +100,8 @@ Be mindful of industry risks and stay adaptable to changing trends for long-term
 ├── images
 ├── zippedData
 ├── .gitignore
-├── index.ipynb
 ├── Microsoft-Movie-Analysis-Presentation.pdf
-└── README.md
+├── README.md
+└── student.ipynb
 ```
 	
